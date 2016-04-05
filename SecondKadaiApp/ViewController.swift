@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var l: UILabel!
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
-        name.text = "こんにちは\(name)さん"
-    }
+            }
     override func viewDidLoad() {
         super.viewDidLoad()
        

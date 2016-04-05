@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -67,7 +68,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-OH-uBN">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-OH-uBN">
                                 <rect key="frame" x="277" y="177" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="d4y-iC-z83"/>
@@ -77,10 +78,10 @@
                                     <segue destination="9fZ-KN-vGI" kind="unwind" unwindAction="unwind:" id="oAg-1S-eVj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn3-fj-yra">
-                                <rect key="frame" x="192" y="64" width="228" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn3-fj-yra">
+                                <rect key="frame" x="20" y="64" width="560" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="OlI-K7-eAh"/>
+                                    <constraint firstAttribute="height" constant="21" id="d1b-Ix-rve"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,9 +91,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="T8s-OH-uBN" firstAttribute="centerX" secondItem="6rG-iT-uBw" secondAttribute="centerX" id="Bfp-tE-svO"/>
-                            <constraint firstItem="yn3-fj-yra" firstAttribute="leading" secondItem="6rG-iT-uBw" secondAttribute="leading" constant="192" id="Dt2-aW-ry2"/>
-                            <constraint firstItem="yn3-fj-yra" firstAttribute="top" secondItem="Man-pa-hmg" secondAttribute="bottom" constant="44" id="Wzg-K2-Nhf"/>
-                            <constraint firstItem="T8s-OH-uBN" firstAttribute="top" secondItem="yn3-fj-yra" secondAttribute="bottom" constant="92" id="q7N-Kc-WID"/>
+                            <constraint firstItem="yn3-fj-yra" firstAttribute="top" secondItem="Man-pa-hmg" secondAttribute="bottom" constant="44" id="dNP-oK-npd"/>
+                            <constraint firstItem="yn3-fj-yra" firstAttribute="trailing" secondItem="6rG-iT-uBw" secondAttribute="trailingMargin" id="xdx-eH-eEK"/>
+                            <constraint firstItem="yn3-fj-yra" firstAttribute="leading" secondItem="6rG-iT-uBw" secondAttribute="leadingMargin" id="yXA-bi-VBx"/>
                         </constraints>
                     </view>
                     <connections>
