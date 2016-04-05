@@ -11,6 +11,7 @@ import UIKit
 class ResultViewController: UIViewController {
     var name="aaa"
     override func viewDidLoad() {
+        label.text = "こんにちは\(name)さん"
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -19,6 +20,7 @@ class ResultViewController: UIViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    @IBOutlet weak var label: UILabel!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
